@@ -14,10 +14,14 @@ public class Ejercicio2 {
         System.out.println("Ingrese el tamaño del arreglo");
         int cant=dar.nextInt();
         int[] arregloDeValores=new int[cant];
+        
         numAletorios(arregloDeValores);
+        mostrarArreglo(arregloDeValores);
+        busquedaMenor(arregloDeValores);
+        System.out.println("El menor de todos = "+busquedaMenor(arregloDeValores));
         
     }
-
+    
     public static void numAletorios(int[] array){
         int i=0;
         //Para establecer un rango de valores aleatorios utilizamos clase 
@@ -27,18 +31,17 @@ public class Ejercicio2 {
             array[i]=num;
             i++;
         }
-        
     }
-
+    
     public static void mostrarArreglo(int[] arreglo){
         int i;
         System.out.println("-------------ARREGLO-----------------");
         for(i=0;i<arreglo.length;i++){
-            System.out.println(arreglo[i]);
+            System.out.print("["+arreglo[i]+"] ");
         }
         System.out.println("");
     }
-
+    
     public static int busquedaMenor(int[] arrayLleno){
         int i;
         int menor=arrayLleno[0];
