@@ -25,6 +25,7 @@ public class Ejercicio2 {
         while(i<array.length){
             int num=(int)(Math.random()*11+1);
             array[i]=num;
+            i++;
         }
         
     }
