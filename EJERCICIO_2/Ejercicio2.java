@@ -15,6 +15,7 @@ public class Ejercicio2 {
         int cant=dar.nextInt();
         int[] arregloDeValores=new int[cant];
         numAletorios(arregloDeValores);
+      
         
     }
     public static void numAletorios(int[] array){
@@ -27,5 +28,14 @@ public class Ejercicio2 {
         }
         
     }
-    
+
+    public static int busquedaMenor(int[] arrayLleno){
+        int i;
+        int menor=arrayLleno[0];
+        for(i=1;i<arrayLleno.length;i++){
+            if(arrayLleno[i]<menor)
+               menor=arrayLleno[i];
+        }
+        return menor;
+    }
 }
