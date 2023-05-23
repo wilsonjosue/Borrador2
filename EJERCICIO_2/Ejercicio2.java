@@ -15,9 +15,9 @@ public class Ejercicio2 {
         int cant=dar.nextInt();
         int[] arregloDeValores=new int[cant];
         numAletorios(arregloDeValores);
-      
         
     }
+
     public static void numAletorios(int[] array){
         int i=0;
         //Para establecer un rango de valores aleatorios utilizamos clase 
@@ -27,6 +27,15 @@ public class Ejercicio2 {
             array[i]=num;
         }
         
+    }
+
+    public static void mostrarArreglo(int[] arreglo){
+        int i;
+        System.out.println("-------------ARREGLO-----------------");
+        for(i=0;i<arreglo.length;i++){
+            System.out.println(arreglo[i]);
+        }
+        System.out.println("");
     }
 
     public static int busquedaMenor(int[] arrayLleno){
